@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <link rel="shortcut icon" href="/img/13.png" type="image/png" />
+
+    <title>Яндекс.Такси - работа водителем</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container ">
+        <a href="#1" class="logo ">
+          <span class="ya"><str>Я</str>ндекс.Такси</span>
+          <span>Официальный парнер</span>
+        </a>
+        <a href="#5" class="rewiew ">Вопросы-ответы</a>
+        <a href="#3" class="btn">Оставить заявку</a>
+      </div>
+    </header>
+    <section id="1" class="section">
+      <div class="container">
+        <div class="left">
+          <span class="ya">
+            Работа водителем <br />
+            в <str>Я</str>ндекс.Такси</span
+          >
+          <span class="text">
+            Онлайн-подключение к заказам Яндекс.Такси за 15 минут
+          </span>
+          <img src="/img/1.png" alt="" />
+        </div>
+        <div class="right ">
+          <img src="/img/2.png" alt="" />
+          <span> 3арабатывайте в Вашем городе </span>
+          <a href="#3" class="btn">Подключиться</a>
+        </div>
+      </div>
+    </section>
+    <section id="2" class="section2">
+      <div class="container">
+        <h1 class=" wow fadeIn delay-.5s">Как начать работу?</h1>
+        <div class="boxs__item  wow fadeIn delay-1s">
+          <div class="box   ">
+            <img src="/img/3.png" alt="" />
+            <span>ПОДКЛЮЧЕНИЕ</span>
+            <p>
+              Оставляете заявку на подключение к Яндекс.Такси на сайте либо
+              звоните по указанному номеру. Получив Ваши данные мы регистрируем
+              Вас в сервисе.
+            </p>
+          </div>
+          <div class="box   ">
+            <img src="/img/4.png" alt="" />
+            <span>УСТАНОВКА ПРОГРАММЫ</span>
+            <p>
+              После подключения отправляем Вам ссылку на Таксометр Яндекс.Такси
+            </p>
+          </div>
+          <div class="box   ">
+            <img src="/img/5.png" alt="" />
+            <span>ФОТОКОНТРОЛЬ</span>
+            <p>
+              Открыв Таксометр выбираете таксопарк Маквин, производите съемку
+              автомобиля и в/у.
+            </p>
+          </div>
+          <div class="box  ">
+            <img src="/img/6.png" alt="" />
+            <span>НАЧАЛО РАБОТЫ</span>
+            <p>
+              Успешно проходите фотоконтроль, выходите на линию и получаете свой
+              первый заказ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="3" class="section3">
+      <div class="container">
+        <div class="left  wow fadeIn delay-1s">
+          <span>Заявка на работу водителем в <str>Я</str>ндекс.Такси</span>
+          <img src="/img/7.png" alt="" />
+        </div>
+        <div class="right  wow fadeIn delay-2s">
+          <span class=" wow ">
+            Оставьте заявку, мы перезвоним и проконсультируем Вас по дальнейшим
+            действиям
+          </span>
+          <form id="Form01" class=" " action="/send.php" method="post">
+            <div class="formItem ">
+              <input type="text" name="name" placeholder="Имя"data-required="true" required /><br />
+            </div>
+
+            <div class="formItem">
+              <input
+                type="text"
+                name="email_City"
+                placeholder="Ваш город"
+                data-required="true"  required/><br />
+            </div>
+
+            <div class="formItem">
+              <input type="text" name="phone" placeholder="Телефон" data-required="true" required /><br />
+            </div>
+
+            <input class="btn" type="submit" name="submit" value="Отправить" />
+          </form>
+          <script>
+            $("form").submit(function() {
+              var faults = $("input")
+                .filter(function() {
+                  // находим не заполненные обязательные элементы input
+                  return $(this).data("required") && $(this).val() === "";
+                })
+                .css("background-color", "#f18a8a"); // выделяем это поле красным
+                
+              if (faults.length) return false; // если одно из полей не заполнено, отменяем отправку
+            });
+          </script>
+          <span class=" ">
+            Нажимая на кнопку, вы даете согласие на обработку персональных
+            данных.
+          </span>
+        </div>
+      </div>
+    </section>
+    <section id="4" class="section4">
+      <div class="container">
+        <div class="boxs__item  wow fadeInLeft delay-1s">
+          <div class="box  ">
+            <span>Для работы</span>
+            <hr />
+            <p>
+              Водительское удостоверение с категорией "В", со стажем 3 и более
+              лет
+            </p>
+          </div>
+          <div class="box  ">
+            <span>Вам </span>
+            <hr />
+            <p>
+              Четыреxдверный автомобиль не старше 2003-го года (какие авто
+              подxодят к тарифу "грузовой" смотрите ниже раздел вопросов)
+            </p>
+          </div>
+          <div class="box   ">
+            <span>Необходимы</span>
+            <hr />
+            <p>
+              Вам понадобится смартфон с операционной системой Android 5.0,
+              камерой, GPS-модулем и 2 ГБ оперативной памяти.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="6" class="section5">
+      <div class="container">
+        <h1 class="wow fadeIn delay-1s">Почему выгодно с нами работать?</h1>
+        <div class="boxs__item  wow fadeIn delay-2s">
+          <div class="box ">
+            <img src="/img/8.png" alt="" />
+            <span>РАБОТА В УДОБНОЕ ВРЕМЯ</span>
+
+            <p>
+              СВОБОДНЫЙ ГРАФИК
+            </p>
+          </div>
+          <div class="box ">
+            <img src="/img/9.png" alt="" />
+            <span> БЫСТРОЕ ПОДКЛЮЧЕНИЕ </span>
+          </div>
+          <div class="box  wow  ">
+            <img src="/img/10.png" alt="" />
+            <span> ЗАКАЗЫ КРУГЛОСУТОЧНО </span>
+
+            <p>
+              МИНИМУМ ПРОСТОЯ
+            </p>
+          </div>
+          <div class="box  wow ">
+            <img src="/img/11.png" alt="" />
+            <span> ВЫПЛАТЫ ДВАЖДЫ В СУТКИ </span>
+          </div>
+          <div class="box  wow  ">
+            <img src="/img/12.png" alt="" />
+            <span> ПРИЕМ БОЛЬШИНСТВА АВТО </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="5" class="answers">
+      <h1 class=" wow fadeIn delay-1s">Часто задаваемые вопросы</h1>
+      <div class="answers_col  wow fadeIn delay-1s">
+        <input type="checkbox" id="hd-1" class="hide " />
+        <label for="hd-1">Какой автомобиль подходит для работы?</label>
+        <div>
+          Для подключения к Яндекс.Такси подойдут большинство пятидверных
+          автомобилей в хорошем состоянии, стоимостью от 150 000 рублей.
+          Диспетчер даст знать, если авто нельзя зарегистрировать.
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-2" class="hide " />
+        <label for="hd-2">Какой планшет или телефон нужен для работы?</label>
+        <div>
+          Минимальные требования, необходимые для работы таксометра
+          Яндекс.Такси: Android 5 или более поздняя версия операционной системы,
+          камера, GPS-модуль и выход в интернет (приложение Таксометр требует
+          около 2-5 Гб в месяц). Камера нужна для прохождения Фотоконтроля, а
+          GPS — это модуль, который принимает сигналы с навигационных спутников.
+          Благодаря этому Яндекс.Такси понимает, где находится водитель,
+          соотносит эти данные с местоположением пассажира и учитывает при
+          распределении заказа. Важно: режим экономии энергии не используйте —
+          иначе передача сигнала GPS ухудшится, и вы можете потерять часть
+          заработка.
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-3" class="hide " />
+        <label for="hd-3"
+          >Подойдет ли Приора 2008 года для работы в Яндекс.Такси?</label
+        >
+        <div>
+          Да, подойдет, подойдет и 2007 года, и ВАЗ 2114 тоже подойдет.
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-4" class="hide " />
+        <label for="hd-4"
+          >Возможно ли работая в Яндекс.Такси перечислять зарплату на чужую
+          банковскую карту?</label
+        >
+        <div>
+          Да, возможно, мы стараемся делать условия максимально комфортными
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-5" class="hide " />
+        <label for="hd-5">Какие есть варианты оплаты?</label>
+        <div>
+          Оплата сайта может быть произведена как при личной встрече так и через
+          банковский перевод на карту ПриватБанка. Альтернативные способы оплаты
+          необходимо обговорить с разработчиком.
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-6" class="hide " />
+        <label for="hd-6"
+          >Можно ли подключиться к другому таксопарку если я уже работаю в
+          яндекс такси?</label
+        >
+        <div>
+          Да, Вы не привязаны только к одному таксопарку, можете подключиться к
+          другим и выбирать между ними.
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-7" class="hide " />
+        <label for="hd-7"
+          >Могут ли работать водителями в Яндекс.Такси женщины?</label
+        >
+        <div>
+          Да, могут. Половая принадлежность не имеет значения для работы в
+          Яндекс.Такси
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-8" class="hide " />
+        <label for="hd-8"
+          >Могут ли устроиться на работу неслышащие или слабослышащие?</label
+        >
+        <div>
+          Да
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-9" class="hide " />
+        <label for="hd-9">Чтобы начали поступать заказы...</label>
+        <div>
+          После того, как Вас зарегистрировали в таксопарке, пройдите
+          фотоконтроль. Запрос на процедуру приходит автоматически, согласитесь
+          на прохождение со своего устройства. Закончив процедуру включите
+          статус «На линии». Первые заказы начнут поступать в течение 10 минут.
+        </div>
+        <br />
+        <br />
+        <input type="checkbox" id="hd-10" class="hide " />
+        <label for="hd-10"
+          >Как зарегистрировать свое авто в Яндекс.Такси?</label
+        >
+        <div>
+          Просто оставьте заявку или позвоните нам. Регистрация займет не более
+          15 минут.
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </body>
+</html>
